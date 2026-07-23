@@ -161,7 +161,9 @@ def get_data(order_text):
         section1 = [
             'HYPERBAR 70000',
             'UWIN TORNADO 60000',
-            'SKE POD CKYSTAL BAR 20000'
+            'SKE POD CKYSTAL BAR 20000',
+            'MERRY MI BLADE 30000',
+            'HYPERBAR 120000'
         ]
         section2 = [
             'ELF BAR ICE KING 30000',
