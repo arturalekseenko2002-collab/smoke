@@ -213,7 +213,8 @@ def get_data(order_text):
             'LIQUID VOZOL',
             'LIQUID VOZOL PRIME',
             'LIQUID PUFFY',
-            'LIQUID FUMOT'
+            'LIQUID FUMOT',
+            'LIQUID YAMI',
         ]
         if product_name in section1: return 1
         if product_name in section2: return 2
