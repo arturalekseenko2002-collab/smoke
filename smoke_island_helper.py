@@ -311,8 +311,17 @@ async def text_worker(message: types.Message):
 
 
 
+async def on_startup(dp):
+
+    await bot.delete_webhook(drop_pending_updates=True)
+
 if __name__ == '__main__':
-    executor.start_polling(dp)
+
+    executor.start_polling(
+        dp,
+        skip_updates=True,
+        on_startup=on_startup
+    )
 #     a = get_data(f'''
 # Order #1191198453
 # 1. VAPORESSO XROS 4 MINI: 90 (1 x 90) Kolor: Camo Red
